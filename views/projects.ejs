@@ -1,101 +1,111 @@
 <%- include('partials/header') %>
 
-<section class="py-4">
-    <h1 class="text-center fw-bold mb-3">
-        My Projects
-    </h1>
-
-    <p class="text-center lead mb-5">
-        Here are some projects I have worked on while studying Networking and IT security.
+<section class="text-center mb-5">
+    <h1 class="display-5 fw-bold">My Projects</h1>
+    <p class="lead text-muted">
+        A collection of projects and assignments
+        I have completed throughout my studies.
     </p>
-
-    <div class="row g-4">
-
-        <div class="col-md-4>
-            <div class="card h-100 shadow-sm">
-                <div class="card-body">
-                    <div class="text-center mb-3">
-                        <i class="fa-solid fa-network-wired fa-4x text-primary"></i>
-                </div>
-
-                <h2 class="card-title h5">
-                    Network Design Project
-                </h2>
-
-                <p class="card-text">
-                        Designed and configured a computer network using Cisco networking tools. Worked with VLANs, routing protocols, switches, routers, and IP addressing.
-                </p>
-
-                <p>
-                    <strong>Technologies:</strong>
-                    Cisco Packet Tracer, VLANs, OSPF, EIGRP
-                </p>
-            </div>
-
-         </div>
-    </div>
-
-    <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-            <div class="card-body">
-                <div class="text-center mb-3">
-                    <i class="fa-solid fa-shield-halved fa-4x text primary"></i>
-                </div>
-
-                <h2 class="card-title h5">
-                    Cybersecurity Labs
-                </h2>
-
-                <p class="card-text">
-                    Completed security exercises involving encryption, authentication, and network security. Explored methods used to protect systems and information from cyber threats.
-                </p>
-
-                <p>
-                    <strong>Technologies:</strong>
-                    Kali Linux, RSA, OpenSSL
-                </p>
-
-            </div>
-
-        </div>
-    </div>
-
-    <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-            <div class="card-body">
-                <div class="text-center mb-3">
-                    <i class="fa-solid fa-laptop-code fa-4x text-primary"></i>
-                </div>
-
-                <h2 class="card-title h5">
-                    Express Portfolio Website
-                </h2>
-
-                 <p class="card-text">
-                    Developed a personal portfolio website using Express.js and EJS templates. Created multiple pages with reusable header and footer components.
-                 </p>
-
-                 <p>
-                    <strong>Technologies:</strong>
-                     Node.js, Express.js, EJS, Bootstrap
-                 </p>
-
-                <a href="https://github.com/adityapatel2007/Assignment2-Aditya-Patel"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="btn btn-primary">
-                        <i class="fa-brands fa-github"></i>
-                        View on GitHub
-                </a>
-                
-
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
 </section>
+
+<div class="row g-4 mb-5">
+
+    <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <i class="fa-brands fa-python fa-2x text-primary mb-3"></i>
+                <h3 class="h5 fw-bold">Python Addition Quiz Project</h3>
+                <p>
+                    Created a five-question addition quiz using Python for my Introduction to Programming course. The program generates random math questions, checks user answers, calculates the final score, and saves the results to a text file.
+                </p>
+                <span class="badge bg-primary">Python</span>
+                <span class="badge bg-secondary">File Handling</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <i class="fa-solid fa-network-wired fa-2x text-primary mb-3"></i>
+                <h3 class="h5 fw-bold">Corporate Network Design Project</h3>
+                <p>
+                    Worked with a group to design and build a small corporate network based on specific requirements. The project involved planning the topology, configuring network devices, assigning IP addresses, and testing communication between devices.
+                </p>
+                <span class="badge bg-primary">Networking</span>
+                <span class="badge bg-secondary">IP Addressing</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <i class="fa-solid fa-diagram-project fa-2x text-primary mb-3"></i>
+                <h3 class="h5 fw-bold">Networking Case Study</h3>
+                <p>
+                    Completed a networking case study for my Introduction to Networking II course. I examined a network scenario and applied networking concepts to network design, routing, and troubleshooting.
+                </p>
+                <span class="badge bg-primary">Network Design</span>
+                <span class="badge bg-secondary">Troubleshooting</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <i class="fa-solid fa-boxes-stacked fa-2x text-primary mb-3"></i>
+                <h3 class="h5 fw-bold">Python Inventory Management Program</h3>
+                <p>
+                    Developed an inventory management program using Python. Users can add, view, and update inventory items, and save or load data using JSON files. The program demonstrates classes, inheritance, encapsulation, method overriding, and exceptions.
+                </p>
+                <span class="badge bg-primary">Python</span>
+                <span class="badge bg-secondary">OOP</span>
+                <span class="badge bg-secondary">JSON</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <i class="fa-solid fa-route fa-2x text-primary mb-3"></i>
+                <h3 class="h5 fw-bold">EIGRP Routing Lab</h3>
+                <p>
+                    Configured EIGRP for IPv4 across multiple routers in my Advanced Networking I course. The lab involved verifying learned routes, testing router connectivity, and troubleshooting routing problems.
+                </p>
+                <span class="badge bg-primary">EIGRP</span>
+                <span class="badge bg-secondary">IPv4</span>
+                <span class="badge bg-secondary">Routing</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <i class="fa-solid fa-code fa-2x text-primary mb-3"></i>
+                <h3 class="h5 fw-bold">Express Portfolio Website</h3>
+                <p>
+                    Built a personal portfolio website using Node.js, Express.js, EJS, Bootstrap, and CSS. The website includes Home, About Me, Projects, and Contact Me pages.
+                </p>
+                <div class="mb-3">
+                    <span class="badge bg-primary">Express.js</span>
+                    <span class="badge bg-secondary">EJS</span>
+                    <span class="badge bg-secondary">Bootstrap</span>
+                </div>
+                <a href="https://github.com/adityapatel2007/Assignment2-Aditya-Patel"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="btn btn-outline-primary btn-sm">
+                    <i class="fa-brands fa-github me-1"></i>
+                    View on GitHub
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
 
 <%- include('partials/footer') %>
