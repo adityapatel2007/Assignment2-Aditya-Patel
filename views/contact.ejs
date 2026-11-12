@@ -1,0 +1,132 @@
+<%- include('partials/header') %>
+
+<section class="py-4">
+    <h1 class="text-center fw-bold mb-3">
+        Contact Me
+    </h1>
+
+    <p class="text-center lead mb-5">
+        Have a question or want to connect?
+        Feel free to reach out!
+    </p>
+
+    <div class="row g-4">
+
+        <div class="col-md-5">
+
+            <h2 class="h4 mb-4">Connect With Me</h2>
+
+            <p>
+                <i class="fa-brands fa-github text-primary me-2"></i>
+                <strong>GitHub:</strong>
+                <a href="https://github.com/adityapatel2007"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    My GitHub Profile
+                </a>
+            </p>
+
+            <p>
+                <i class="fa-brands fa-linkedin text-primary me-2"></i>
+                <strong>LinkedIn:</strong>
+                <a href="https://www.linkedin.com/in/aditya-patel-19541744a/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    My LinkedIn Profile
+                </a>
+            </p>
+
+            <p>
+                I am interested in networking,cybersecurity, web development, and opportunities to collaborate.
+            </p>
+    </div>
+
+    <div class="col-md-7">
+        <div class="card shadow-sm">
+            <div class="card-body p-4">
+
+                <h2 class="h4 mb-4">
+                    Send Me a Message
+                </h2>
+
+                <form id="contactForm">
+
+                    <div class="mb-3">
+                        <label for="name" class="form-label">
+                            Your Name
+                        </label>
+                        <input type="text"
+                                class="form-control"
+                                id="name"
+                                name="name"
+                                required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">
+                            Your Email
+                        </label>
+                        <input type="email"
+                                class="form-control"
+                                id="email"
+                                name="email"
+                                required>
+                    </div>
+
+                    <div class="mb-3">
+                         <label for="message" class="form-label">
+                            Your Message
+                        </label>
+                        <textarea class="form-control"
+                                 id="message"
+                                 name="message"
+                                 rows="5"
+                                 required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        Prepare Email
+                    </button>
+
+                </form>
+
+                <p class="text-muted small mt-3">
+                    This form opens your email application so you can review and send your message.
+                </p>
+
+            </div>
+        
+
+        </div>
+
+    </div>
+</div>
+
+</section>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    const subject = encodeURIComponent('Portfolio Contact from ' + name);
+    const body = encodeURIComponent(
+        'Name: ' + name + '\n' +
+        'Email: ' + email + '\n\n' +
+        'Message:\n' + message
+    );
+
+    const recipient = 'YOUR_EMAIL@example.com';
+
+    window.location.href =
+        'mailto:' + recipient +
+        '?subject=' + subject +
+        '&body=' + body;
+});
+</script>
+
+<%- include('partials/footer') %>
