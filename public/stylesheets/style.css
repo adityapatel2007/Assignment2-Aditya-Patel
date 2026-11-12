@@ -115,6 +115,9 @@ footer i {
     .navbar-brand {
         font-size: 1.2rem;
     }
+
+
+
 }
 
 .card {
@@ -192,4 +195,8 @@ section .fa-user-shield {
     .project-image {
         height: 180px;
     }
+}
+
+main > section:first-child.bg-dark h1 {
+    color: white !important;
 }
